@@ -37,6 +37,14 @@
 }
 
 - (IBAction)btnMario:(id)sender {
+    UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"Enter a height" message:@"Mario" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *actionDone = [UIAlertAction actionWithTitle:@"Done" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"Done!");
+    }];
+
+    [alertVC addAction:actionDone];
+
+    [self presentViewController:alertVC animated:true completion:nil];
     [self marioWithLevels:10];
 }
 
