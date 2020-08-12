@@ -23,8 +23,12 @@
     NSMutableString *result = [[NSMutableString alloc] init];
 
     for (int i = 0; i <= level; i++) {
-        NSLog(@"%@", result);
+        for (int j = 0; j < i; j++) {
+            [result appendString:@"#"];
+        }
+        [result appendString:@"\n"];
     }
+    NSLog(@"%@", result);
 }
 
 @end
