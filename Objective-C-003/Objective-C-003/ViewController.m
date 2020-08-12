@@ -49,16 +49,21 @@ NSString *cellID = @"cell";
         }
 
         self.courses = courses;
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
     }] resume];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return self.courses.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    cell.textLabel.text = [NSString stringWithFormat:@"Item %li", (long)indexPath.row];
+    Course *item = self.courses[indexPath.row];
+    cell.textLabel.text = item.name;
     return cell;
 }
 
