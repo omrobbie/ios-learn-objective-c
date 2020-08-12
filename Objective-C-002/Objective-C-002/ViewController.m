@@ -18,4 +18,7 @@
     [super viewDidLoad];
 }
 
+- (IBAction)btnCalculateTapped:(id)sender {
+}
+
 @end

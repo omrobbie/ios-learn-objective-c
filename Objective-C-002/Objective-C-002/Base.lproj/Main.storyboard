@@ -59,12 +59,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="btnCalculateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBz-zP-OhN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Coffee Shop" id="QJz-Tx-WL4"/>
+                    <connections>
+                        <outlet property="txtCoffee" destination="7Gd-qh-atr" id="FWn-ez-5pi"/>
+                        <outlet property="txtRatio" destination="jRg-F6-m9T" id="jxX-1j-U8w"/>
+                        <outlet property="txtWater" destination="OPh-u9-Lhb" id="wUQ-ku-O3N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

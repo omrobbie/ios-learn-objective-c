@@ -10,4 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *txtWater;
+@property (weak, nonatomic) IBOutlet UITextField *txtRatio;
+@property (weak, nonatomic) IBOutlet UITextField *txtCoffee;
+
+- (IBAction)btnCalculateTapped:(id)sender;
+
 @end
