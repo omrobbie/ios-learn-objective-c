@@ -19,6 +19,10 @@
 }
 
 - (IBAction)btnCalculateTapped:(id)sender {
+    float water = [[self.txtWater text] floatValue];
+    float ratio = [[self.txtRatio text] floatValue];
+
+    NSLog(@"water: %f, ratio: %f", water, ratio);
 }
 
 @end
