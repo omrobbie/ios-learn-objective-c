@@ -26,6 +26,9 @@
 
     float coffee = water / ratio;
     NSLog(@"coffee: %f", coffee);
+
+    NSString *coffeeText = [NSString stringWithFormat:@"%f", coffee];
+    self.txtCoffee.text = coffeeText;
 }
 
 @end
