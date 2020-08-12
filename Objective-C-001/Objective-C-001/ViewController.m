@@ -29,6 +29,7 @@
         [result appendString:@"\n"];
     }
     NSLog(@"%@", result);
+    self.txtResult.text = result;
 }
 
 @end
