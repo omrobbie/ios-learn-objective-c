@@ -14,6 +14,7 @@
 		FC695A7324E3B915001D740E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC695A7224E3B915001D740E /* Assets.xcassets */; };
 		FC695A7624E3B915001D740E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC695A7424E3B915001D740E /* LaunchScreen.storyboard */; };
 		FC695A7924E3B915001D740E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC695A7824E3B915001D740E /* main.m */; };
+		FC695A9024E3C8BB001D740E /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = FC695A8F24E3C8BB001D740E /* Course.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FC695A7524E3B915001D740E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC695A7724E3B915001D740E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC695A7824E3B915001D740E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC695A8F24E3C8BB001D740E /* Course.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		FC695A9124E3C8C9001D740E /* Course.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				FC695A6A24E3B914001D740E /* SceneDelegate.m */,
 				FC695A6C24E3B914001D740E /* ViewController.h */,
 				FC695A6D24E3B914001D740E /* ViewController.m */,
+				FC695A9124E3C8C9001D740E /* Course.h */,
+				FC695A8F24E3C8BB001D740E /* Course.m */,
 				FC695A6F24E3B914001D740E /* Main.storyboard */,
 				FC695A7224E3B915001D740E /* Assets.xcassets */,
 				FC695A7424E3B915001D740E /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 				FC695A6824E3B914001D740E /* AppDelegate.m in Sources */,
 				FC695A7924E3B915001D740E /* main.m in Sources */,
 				FC695A6B24E3B914001D740E /* SceneDelegate.m in Sources */,
+				FC695A9024E3C8BB001D740E /* Course.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
