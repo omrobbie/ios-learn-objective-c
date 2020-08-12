@@ -23,6 +23,9 @@
     float ratio = [[self.txtRatio text] floatValue];
 
     NSLog(@"water: %f, ratio: %f", water, ratio);
+
+    float coffee = water / ratio;
+    NSLog(@"coffee: %f", coffee);
 }
 
 @end
