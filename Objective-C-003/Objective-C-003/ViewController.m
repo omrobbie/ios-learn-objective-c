@@ -34,6 +34,12 @@ NSString *cellID = @"cell";
 
     [[NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         NSLog(@"Data fetched!");
+
+        NSArray *coursesJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+
+        for (NSDictionary *course in coursesJSON) {
+            NSLog(@"%@", course[@"name"]);
+        }
     }] resume];
 }
 
