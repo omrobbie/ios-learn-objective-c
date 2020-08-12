@@ -32,4 +32,12 @@
     self.txtResult.text = result;
 }
 
+- (IBAction)btnClear:(id)sender {
+    self.txtResult.text = @"";
+}
+
+- (IBAction)btnMario:(id)sender {
+    [self marioWithLevels:10];
+}
+
 @end

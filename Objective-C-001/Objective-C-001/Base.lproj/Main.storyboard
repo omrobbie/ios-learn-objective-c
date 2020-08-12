@@ -26,10 +26,32 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Rap-bh-ROn">
+                                <rect key="frame" x="20" y="284" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mii-H1-5Yz">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="30"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="btnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCx-4D-Ohh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JgV-EG-lPo">
+                                        <rect key="frame" x="199" y="0.0" width="175" height="30"/>
+                                        <state key="normal" title="Mario!"/>
+                                        <connections>
+                                            <action selector="btnMario:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KFe-gs-CL1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="rgt-uB-h01" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8EU-f5-Naa"/>
+                            <constraint firstItem="Rap-bh-ROn" firstAttribute="top" secondItem="rgt-uB-h01" secondAttribute="bottom" constant="20" id="ClZ-ZC-Aub"/>
+                            <constraint firstItem="Rap-bh-ROn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cfB-Fy-nSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rap-bh-ROn" secondAttribute="trailing" constant="20" id="ew7-OY-SVA"/>
                             <constraint firstItem="rgt-uB-h01" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="i52-Bu-2uB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rgt-uB-h01" secondAttribute="trailing" constant="20" id="mxh-q4-K6p"/>
                         </constraints>

@@ -12,4 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *txtResult;
 
+- (IBAction)btnClear:(id)sender;
+- (IBAction)btnMario:(id)sender;
+
 @end
