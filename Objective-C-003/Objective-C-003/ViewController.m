@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Course.h"
 
 @interface ViewController ()
+
+@property (strong, nonatomic) NSMutableArray<Course *> *courses;
 
 @end
 
@@ -37,9 +40,15 @@ NSString *cellID = @"cell";
 
         NSArray *coursesJSON = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
 
-        for (NSDictionary *course in coursesJSON) {
-            NSLog(@"%@", course[@"name"]);
+        NSMutableArray<Course *> *courses = NSMutableArray.new;
+        for (NSDictionary *courseDict in coursesJSON) {
+            NSString *name = courseDict[@"name"];
+            Course *course = Course.new;
+            course.name = name;
+            [courses addObject:course];
         }
+
+        self.courses = courses;
     }] resume];
 }
 
