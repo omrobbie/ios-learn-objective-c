@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Hello World!");
+    [self marioWithLevels:10];
+}
+
+- (void)marioWithLevels: (int)level {
+    NSMutableString *result = [[NSMutableString alloc] init];
+
+    for (int i = 0; i <= level; i++) {
+        NSLog(@"%@", result);
+    }
 }
 
 @end
