@@ -43,8 +43,10 @@ NSString *cellID = @"cell";
         NSMutableArray<Course *> *courses = NSMutableArray.new;
         for (NSDictionary *courseDict in coursesJSON) {
             NSString *name = courseDict[@"name"];
+            NSNumber *numberOfLessons = courseDict[@"number_of_lessons"];
             Course *course = Course.new;
             course.name = name;
+            course.numberOfLessons = numberOfLessons;
             [courses addObject:course];
         }
 
@@ -61,9 +63,11 @@ NSString *cellID = @"cell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellID];
     Course *item = self.courses[indexPath.row];
     cell.textLabel.text = item.name;
+    cell.detailTextLabel.text = item.numberOfLessons.stringValue;
     return cell;
 }
 
