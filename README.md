@@ -7,3 +7,8 @@ Learn basic Objective-C, how to create variable and function. Play with Storyboa
 <img src="Objective-C-001/screenshot/preview1.png" width=256 />&nbsp;
 <img src="Objective-C-001/screenshot/preview2.png" width=256 />&nbsp;
 <img src="Objective-C-001/screenshot/preview3.png" width=256 />&nbsp;
+
+### 2. iPhone Apps 101: Create Your First iPhone App with Xcode 5 and Objective-C
+Pretty much the same as topic 1. The differentiate is now we are using float. Now I'm feeling familiar and get used to Objective-C, try to find more advanced tutorials.<br>
+* You can check the full tutorial [here](https://www.youtube.com/watch?v=0iUBO5MN_ZU).<br>
+<img src="Objective-C-002/screenshot/preview.png" width=256 />&nbsp;
