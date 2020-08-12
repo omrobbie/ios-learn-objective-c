@@ -14,8 +14,25 @@
 
 @implementation ViewController
 
+NSString *cellID = @"cell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupList];
+}
+
+- (void)setupList {
+    [self.tableView registerClass:UITableViewCell.class forCellReuseIdentifier:cellID];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    cell.textLabel.text = [NSString stringWithFormat:@"Item %li", (long)indexPath.row];
+    return cell;
 }
 
 @end
